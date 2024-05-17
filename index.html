@@ -21,11 +21,26 @@
         let reverseBtn = document.getElementById('reverse');
         let reWordBtn = document.getElementById('reWord');
 
+
+        
+
         button.addEventListener('click', () => {
             let inputVal = input.value;
             let result = capitalize(inputVal);
             output.innerHTML = `<h2>${result}</h2>`;
         });
+
+
+
+        function capitalize(line) {
+            let words = line.split(' ');
+            for (let i = 0; i < words.length; i++) {
+              words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+            }
+    
+            return words.join(' ');
+          }
+
 
         reverseBtn.addEventListener('click', () => {
             let inputVal = input.value;
@@ -40,15 +55,7 @@
         });
 
         
-        function capitalize(line) {
-            let words = line.split(' ');
-            for (let i = 0; i < words.length; i++) {
-              words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
-            }
-    
-            return words.join(' ');
-          }
-
+       
         function reverseString(input) {
             return input.split("").reverse().join("");
         }    
@@ -60,8 +67,6 @@
     
             return reverseSentence;
         }
-    
-       
     </script> 
 </body>
 </html>
