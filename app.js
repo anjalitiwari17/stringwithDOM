@@ -60,15 +60,6 @@
 
 
 
-// let input = document.getElementById("input");
-// let btn = document.getElementById("btn");
-// let output = document.getElementById("output");
-
-// btn.addEventListener("click", () => {
-//   let inputValue = input.value;
-//   let res = capitalize(inputValue);
-//   output.innerHTML = `<h2>${res}</h2>`;
-// });
 
 // function capitalize(str) {
 //   let s = "";
@@ -84,3 +75,5 @@
 // let st = "this is javascript";
 // let res = capitalize(st);
 // console.log(res);
+
+
