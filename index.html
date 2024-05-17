@@ -1,0 +1,87 @@
+<!-- function capitalize(line) { -->
+    <!-- //         let words = line.split(' ');
+    //         for (let i = 0; i < words.length; i++) {
+    //           words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    //         }
+          
+    //         return words.join(' ');
+    //       }
+          
+    //       let input = "this is javascript";
+    //       let output = capitalize(input);
+    //       console.log(output);  -->
+    <!-- function capitalize(str) {
+        //     let s='';
+        //     for(let i = 0; i < str.length; i++){
+        //         if(i == 0 || str[i - 1] == ' '){
+        //             s=s+str[i].toUpperCase();
+        //         }
+        //         else{
+        //             s=s+str[i];
+        //         }
+        //     }
+        //     return s;
+        // }
+        // let st = 'this is javascript';
+        // let res = capitalize(st);
+        // console.log(res); -->
+
+<!--         
+           function reverse(){
+            let a="i am learning javascript"
+let b=""
+i=a.length-1;
+while (i>=0){
+    b+=a[i]
+    i=i-1
+}
+console.log(b)
+          }
+        return b;  -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>capitalize</h1>
+        <input type="text" placeholder=""Enter sentence id="input">
+        <button id="btn">Capitalize</button>
+        </div>
+        <script>
+            let input =document.getElementById('input');
+            let btn =document.getElementById('btn');
+            let output =document.getElementById('output');
+            
+
+
+            btn.addEventListener('click',()=>{
+let inputValue=input.value;
+let res =capitalize(inputValue);
+output.innerHTML=`<h2>${res}</h2>`;
+}
+            );
+            
+            
+             function capitalize(str) {
+                  let s='';
+                    for(let i = 0; i < str.length; i++){
+                        if(i == 0 || str[i - 1] == ' '){
+                             s=s+str[i].toUpperCase();
+                         }
+                         else{
+                             s=s+str[i];
+                         }
+                     }
+                     return s;
+                 }
+                 let st = 'this is javascript';
+                 let res = capitalize(st);
+                console.log(res);  
+        </script>
+    </body>
+    </html>
